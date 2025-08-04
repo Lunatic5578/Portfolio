@@ -4,13 +4,13 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import znews from "../assets/Znews.png"
 import carehut from "../assets/CareHut.png";
 import foodian from "../assets/Foodian.png"
-import zauth from "../assets/zauth.png"
-import passgen from "../assets/passgen.png"
-import passman from "../assets/passman.png"
-import poslyzer from "../assets/poslyzer.png"
-import weather from "../assets/weather.png"
-import todoz from "../assets/todoz.png"
-import zbgrem from "../assets/zbgrem.png"
+import zauth from "../assets/Zauth.png"
+import passgen from "../assets/PassGen.png"
+import passman from "../assets/PassMan.png"
+import poslyzer from "../assets/Poslyzer.png"
+import weather from "../assets/Weather.png"
+import todoz from "../assets/TodoZ.png"
+import zbgrem from "../assets/ZbgRem.png"
 
 // Reusable Project Card Component
 const ProjectCard = ({ project, isDark }) => (
