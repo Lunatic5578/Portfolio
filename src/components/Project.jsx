@@ -192,7 +192,7 @@ const Project = () => {
     {
       title: "Poslyzer",
       description:
-        "A fullstack AI-powered posture analysis web application, allowing users to assess squat and sitting postures via webcam or uploaded video with over 90% response accuracy per frame",
+        "A fullstack posture analysis web application, allowing users to assess squat and sitting postures via webcam or uploaded video with over 90% response accuracy per frame",
       image: poslyzer,
       techStack: [
         { name: "React.js" },
