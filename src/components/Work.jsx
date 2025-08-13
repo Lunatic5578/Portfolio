@@ -14,8 +14,7 @@ const Work = () => {
       duration: "July 2023 - Feb 2024",
       image: gdsc,
       location: "Hybrid",
-      description:
-      `Conducted seminars guiding students on various topics of web development explaining complex topics and answering various queries of new learners.
+      description: `Conducted seminars guiding students on various topics of web development explaining complex topics and answering various queries of new learners.
       Helpled in developing website for the club.`,
       role: ["Mentor, Developer"],
     },
@@ -25,8 +24,7 @@ const Work = () => {
       duration: "July 2023 - Feb 2024",
       image: gdsc,
       location: "Hybrid",
-      description:
-      `Conducted a webinar making students understand the importance of DSA and provided them with a custom roadmap guiding them for their studies. 
+      description: `Conducted a webinar making students understand the importance of DSA and provided them with a custom roadmap guiding them for their studies. 
       Designed a custom DSA sheet for the club to help new learners get started in a structured and organized path with ease.`,
       role: ["Mentor, Instructor"],
     },
@@ -36,7 +34,8 @@ const Work = () => {
       duration: "Nov 2022 - Jan 2023",
       image: lithium,
       location: "Hybrid",
-      description: "Collaborated with a team and worked on designing and developing an event website for the annual fresher's event of Bengal Institute of Technology.",
+      description:
+        "Collaborated with a team and worked on designing and developing an event website for the annual fresher's event of Bengal Institute of Technology.",
       role: ["Team Management, Event Mangement, Developer, Designer"],
     },
   ];
@@ -50,20 +49,19 @@ const Work = () => {
           : "bg-gradient-to-br  from-zinc-200 via-white/80 to-gray-400"
       } py-12 px-4 sm:px-6 min-h-screen`}
     >
+      <h1
+        className={`text-center font-bold ${
+          isDark ? "text-white" : "text-zinc-900"
+        } mb-2`}
+      >
+        Work Timeline
+      </h1>
       <motion.div
         id="works"
         ref={ref}
         className="w-full min-h-screen flex flex-col items-center py-20 px-5 md:px-10"
       >
         <div className="max-w-4xl w-full relative">
-          <h1
-            className={`text-center font-bold ${
-              isDark ? "text-white" : "text-zinc-900"
-            } mb-5`}
-          >
-            Work Timeline
-          </h1>
-
           <div className="absolute top-0 left-5 md:left-10 w-1 h-full bg-gray-600"></div>
 
           {worksData.map((work, index) => (
@@ -83,7 +81,9 @@ const Work = () => {
 
               <motion.div
                 whileHover={{ scale: 1.02 }}
-                className={`w-full md:w-3/4 ml-auto relative p-6 rounded-lg shadow-lg border bg-opacity-50 text-white transition-all duration-300 ${isDark ? 'bg-gray-800':'bg-blue-50'}`}
+                className={`w-full md:w-3/4 ml-auto relative p-6 rounded-lg shadow-lg border bg-opacity-50 text-white transition-all duration-300 ${
+                  isDark ? "bg-gray-800" : "bg-blue-50"
+                }`}
               >
                 <div className="relative z-10">
                   <div className="flex justify-center items-center flex-col">
