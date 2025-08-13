@@ -39,7 +39,7 @@ export default function SkillsGrid() {
         { name: "Express.js", logo: <SiExpress className=" text-2xl" /> },
         { name: "MongoDB", logo: <SiMongodb className="text-green-600 text-2xl" /> },
         { name: "MySQL", logo: <SiMysql className="text-3xl" /> },
-        { name: "PostgreSQL", logo: <SiPostgresql className=" text-2xl" /> },
+        // { name: "PostgreSQL", logo: <SiPostgresql className=" text-2xl" /> },
       ],
     },
     {

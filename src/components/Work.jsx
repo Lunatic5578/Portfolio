@@ -59,10 +59,10 @@ const Work = () => {
       <motion.div
         id="works"
         ref={ref}
-        className="w-full min-h-screen flex flex-col items-center py-20 px-5 md:px-10"
+        className="w-full min-h-screen flex flex-col items-center py-20 justify-center"
       >
         <div className="max-w-4xl w-full relative">
-          <div className="absolute top-0 left-5 md:left-10 w-1 h-full bg-gray-600"></div>
+          
 
           {worksData.map((work, index) => (
             <motion.div
@@ -77,11 +77,11 @@ const Work = () => {
               }}
               className="relative flex flex-col md:flex-row items-start mb-12"
             >
-              <motion.div className="absolute left-[3px] md:left-[32px] top-1/2 -translate-y-1/2 w-5 h-5 bg-blue-500 rounded-full border-2 border-white shadow-md" />
+              
 
               <motion.div
                 whileHover={{ scale: 1.02 }}
-                className={`w-full md:w-3/4 ml-auto relative p-6 rounded-lg shadow-lg border bg-opacity-50 text-white transition-all duration-300 ${
+                className={`w-full md:w-3/4 m-auto relative p-6 rounded-lg shadow-lg border bg-opacity-50 text-white transition-all duration-300 ${
                   isDark ? "bg-gray-800" : "bg-blue-50"
                 }`}
               >
