@@ -77,7 +77,7 @@ function Home() {
             <Typewriter
               words={[
                 "Engineer Graduate",
-                "MERN Stack Web Developer",
+                "Full Stack Web Developer",
                 "Java Programmer",
               ]}
               loop
