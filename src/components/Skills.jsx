@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaJava, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaPython, FaFigma} from "react-icons/fa";
-import {SiTailwindcss, SiJquery, SiExpress, SiMongodb, SiMysql, SiVercel, SiRender, SiPostgresql } from "react-icons/si";
+import {SiTailwindcss, SiJquery, SiExpress, SiMongodb, SiMysql, SiVercel, SiRender, SiPostgresql, SiPostman  } from "react-icons/si";
 import { useTheme } from '../context/ThemeContext';
 import FloatingShape from './FloatingShape';
 import { VscVscode } from "react-icons/vsc";
@@ -52,6 +52,7 @@ export default function SkillsGrid() {
         { name: "Render", logo: <SiRender className="text-indigo-500 text-2xl" /> },
         { name: "Figma", logo: <FaFigma className="text-pink-500 text-2xl" /> },
         { name: "Visual Studio Code", logo: <VscVscode className="text-blue-500 text-2xl" /> },
+        { name: "Postman", logo:<SiPostman  className="text-orange-500 text-2xl" /> },
       ],
     },
   ];
