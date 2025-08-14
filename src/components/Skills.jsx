@@ -44,7 +44,7 @@ export default function SkillsGrid() {
     },
     {
       title: "Tools & Platforms",
-      description: "Development tools and deployment platforms I am work with",
+      description: "Development tools and deployment platforms I work with",
       skills: [
         { name: "Git", logo: <FaGitAlt className="text-orange-500 text-2xl" /> },
         { name: "GitHub", logo: <FaGithub className="text-2xl" /> },
