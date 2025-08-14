@@ -3,15 +3,28 @@ import { useTheme } from "../context/ThemeContext";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import gdsc from "../assets/gdsc.jpg";
+import pinnacle from "../assets/pinnacle.jpeg"
 import lithium from "../assets/lithium.jpg";
 
 const Work = () => {
   const { isDark } = useTheme();
   const worksData = [
     {
+      title: "Web Development Intern",
+      company: "Pinnacle Labs",
+      duration: "May 2024 - June 2024",
+      link: "https://drive.google.com/file/d/170jxCP3bMe-fwwMk4MtkAr3zIapr3GnX/view",
+      image: pinnacle,
+      location: "Hybrid",
+      description: `Solved several tasks.
+      Built two basic projects as a part of internship.`,
+      role: ["Developer"],
+    },
+    {
       title: "Core-Member for Web Development Team",
       company: "GDSC-BIT",
       duration: "July 2023 - Feb 2024",
+      link:"https://drive.google.com/file/d/18Xa399ScVzle55Z7QrES8hlE_yoLRdRY/view",
       image: gdsc,
       location: "Hybrid",
       description: `Conducted seminars guiding students on various topics of web development explaining complex topics and answering various queries of new learners.
@@ -22,6 +35,7 @@ const Work = () => {
       title: "Core-Member for Data-Structures and Algorithms Team",
       company: "GDSC-BIT",
       duration: "July 2023 - Feb 2024",
+      link:"https://drive.google.com/file/d/18Xa399ScVzle55Z7QrES8hlE_yoLRdRY/view",
       image: gdsc,
       location: "Hybrid",
       description: `Conducted a webinar making students understand the importance of DSA and provided them with a custom roadmap guiding them for their studies. 
@@ -32,6 +46,7 @@ const Work = () => {
       title: "Frontend Developer",
       company: "Lithium",
       duration: "Nov 2022 - Jan 2023",
+      link:"https://priyotakundu.github.io/LITHIUM-2K23/",
       image: lithium,
       location: "Hybrid",
       description:
@@ -90,22 +105,22 @@ const Work = () => {
                     <img
                       src={work.image}
                       alt={`${work.company} logo`}
-                      className="h-30 w-60 object-contain m-2 p-1"
+                      className={`h-30 w-60 object-contain m-2 p-1 ${work.image===pinnacle ?"border-2 rounded-full": ""}`}
                     />
                   </div>
                   <h3
                     className={`${
                       isDark ? "text-blue-400 " : "text-blue-600"
-                    } font-bold text-xl mb-2`}
+                    } font-bold text-xl mb-2 flex items-center justify-between flex-row`}
                   >
-                    {work.title}
+                    {work.title} <a href={work.link} target="_blank" rel="noopener noreferrer" className="text-2xl no-underline transform hover:rotate-45 transition-all duration-200 inline-block">🔗</a>
                   </h3>
                   <h4
                     className={`${
                       isDark ? "text-yellow-200 " : "text-yellow-600"
                     } font-sm text-xl mb-2`}
                   >
-                    {work.company}
+                    {work.company} 
                   </h4>
                   <p
                     className={`${
