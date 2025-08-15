@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaJava, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaPython, FaFigma} from "react-icons/fa";
-import {SiTailwindcss, SiJquery, SiExpress, SiMongodb, SiMysql, SiVercel, SiRender, SiPostgresql, SiPostman, } from "react-icons/si";
+import {SiTailwindcss, SiJquery, SiExpress, SiMongodb, SiMysql, SiVercel, SiRender, SiPostgresql, SiPostman,SiFlask, } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { useTheme } from '../context/ThemeContext';
 import FloatingShape from './FloatingShape';
@@ -41,6 +41,7 @@ export default function SkillsGrid() {
         { name: "Express.js", logo: <SiExpress className=" text-2xl" /> },
         { name: "MongoDB", logo: <SiMongodb className="text-green-600 text-2xl" /> },
         { name: "MySQL", logo: <SiMysql className="text-3xl" /> },
+        { name: "Flask", logo: <SiFlask className="text-3xl" /> },
         // { name: "PostgreSQL", logo: <SiPostgresql className=" text-2xl" /> },
       ],
     },
