@@ -1,6 +1,7 @@
 import React from 'react';
 import {FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaJava, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaPython, FaFigma} from "react-icons/fa";
-import {SiTailwindcss, SiJquery, SiExpress, SiMongodb, SiMysql, SiVercel, SiRender, SiPostgresql, SiPostman  } from "react-icons/si";
+import {SiTailwindcss, SiJquery, SiExpress, SiMongodb, SiMysql, SiVercel, SiRender, SiPostgresql, SiPostman, } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
 import { useTheme } from '../context/ThemeContext';
 import FloatingShape from './FloatingShape';
 import { VscVscode } from "react-icons/vsc";
@@ -17,6 +18,7 @@ export default function SkillsGrid() {
         { name: "JavaScript", logo: <FaJs className="text-yellow-400 text-2xl" /> },
         { name: "Java", logo: <FaJava className="text-red-600 text-2xl" /> },
         { name: "Python", logo: <FaPython className="text-blue-500 text-2xl" /> },
+        { name: "TypeScript", logo: <BiLogoTypescript className="text-blue-500 text-2xl" /> },
       ],
     },
     {
