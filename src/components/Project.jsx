@@ -35,7 +35,7 @@ const ProjectCard = ({ project, isDark }) => (
       >
         {project.description}
       </p>
-      <div className="flex justify-center items-center flex-wrap gap-2 mb-6">
+      <div className="flex justify-center items-center flex-wrap gap-2 mb-6 max-w-lg">
         {project.techStack.map((tech, idx) => (
           <span
             key={`${project.title}-tech-${idx}`}
@@ -82,25 +82,7 @@ const Project = () => {
   const { isDark } = useTheme();
 
   const extraProjects = [
-    {
-      title: "Z-Auth",
-      description:
-        "A custom designed advanced MERN Authentication web-app with secured storage, interactive user-interface and features like password strength meter,etc",
-      image: zauth,
-      techStack: [
-        { name: "React.js" },
-        { name: "Node.js" },
-        { name: "MongoDB" },
-        { name: "TailwindCSS" },
-        { name: "FramerMotion" },
-        { name: "Google SMTP Service" },
-        { name: "Render" },
-      ],
-      links: {
-        github: "https://github.com/Lunatic5578/MernAuth",
-        live: "https://mernauth-k6gh.onrender.com/",
-      },
-    },
+    
     {
       title: "CareHut",
       description:
@@ -244,6 +226,25 @@ const Project = () => {
         live: "https://passman-otc4.onrender.com/",
       },
     },
+    {
+      title: "Z-Auth",
+      description:
+        "A custom designed advanced MERN Authentication web-app with secured storage, interactive user-interface and features like password strength meter,etc",
+      image: zauth,
+      techStack: [
+        { name: "React.js" },
+        { name: "Node.js" },
+        { name: "MongoDB" },
+        { name: "TailwindCSS" },
+        { name: "FramerMotion" },
+        { name: "Google SMTP Service" },
+        { name: "Render" },
+      ],
+      links: {
+        github: "https://github.com/Lunatic5578/MernAuth",
+        live: "https://mernauth-k6gh.onrender.com/",
+      },
+    },
   ];
 
   return (
@@ -264,7 +265,7 @@ const Project = () => {
             Projects
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <ProjectCard
                 key={`main-${index}`}
